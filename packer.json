@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "repo_path" : "path/to/local/or/remote/code/repository",
+    "project_id": "roberts-project-23"
+  },
+  "builders": [
+    {
+      "type": "googlecompute",
+      "project_id": "roberts-project-23",
+      "source_image_project_id": "centos-cloud",
+      "source_image_family": "centos-stream-9",
+      "zone": "us-central1-a",
+      "image_description": "created-with-packer",
+      "ssh_username": "packer",
+      "tags": "packer"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "script.sh"
+    }
+  ]
+}
