@@ -1,6 +1,5 @@
 {
   "variables": {
-    "repo_path" : "path/to/local/or/remote/code/repository",
     "project_id": "roberts-project-23"
   },
   "builders": [
