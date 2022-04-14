@@ -5,8 +5,7 @@
   "builders": [
     {
       "type": "googlecompute",
-      "project_id": "roberts-project-23",
-      "source_image_project_id": "centos-cloud",
+      "project_id": "{{ user `project_id` }}",
       "source_image_family": "centos-stream-9",
       "zone": "us-central1-a",
       "image_description": "created-with-packer",

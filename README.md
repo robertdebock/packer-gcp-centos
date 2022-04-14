@@ -29,7 +29,8 @@ gcloud iam service-accounts create packer \
 ## Build
 
 ```shell
-packer build packer.json
+packer build packer.pkr.hcl
+packer build packer.pkr.json
 ```
 
 The build takes a couple of minutes and result in:
